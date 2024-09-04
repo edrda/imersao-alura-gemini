@@ -1,1 +1,2 @@
-console.log("Ada Lovelace");
+import { dados } from './dados.js';
+console.log(dados);
