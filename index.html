@@ -14,47 +14,21 @@
     </header>
     <main>
         <section>
-            <input type="text" placeholder="Digite o nome da referência de tecnologia">
-            <button class="search-button"> 
+            <input type="text" placeholder="Digite o nome da referência de tecnologia" id="search-box">
+            <button onclick="buscar()" class="search-button"> 
                 <span>Buscar</span>
             </button>
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <div class="item-head">
-                    <img src="https://media.gazetadopovo.com.br/2019/05/30072214/ada-ff48e782.jpg">
-                    <h2>
-                        <a href="#" target="_blank">Ada Lovelace</a>
-                    </h2>
-                </div>
-                
-                <p class="descricao-meta">Ada Lovelace foi uma matemática e escritora britânica do século XIX, frequentemente reconhecida como a primeira programadora da história. Seus trabalhos pioneiros na área da computação abriram caminho para futuras gerações de programadoras e cientistas da computação.</p>
-                <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Mais informações</a>
-            </div>
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Grace Hopper</a>
-                </h2>
-                <p class="descricao-meta">Pionera na área de programação, Grace Hopper foi uma das criadoras da linguagem de programação COBOL, uma das primeiras linguagens de alto nível, facilitando a comunicação entre humanos e computadores. Ela também é conhecida por popularizar o termo "bug" na computação, após encontrar uma mariposa presa em um relé de um computador.</p>
-                <a href="https://pt.wikipedia.org/wiki/Grace_Hopper" target="_blank">Mais informações</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Hedy Lamarr</a>
-                </h2>
-                <p class="descricao-meta">Além de sua carreira no cinema, Hedy Lamarr desenvolveu um sistema de comunicação de espectro espalhamento, um precursor da tecnologia utilizada em redes sem fio modernas como Wi-Fi e Bluetooth.</p>
-                <a href="https://pt.wikipedia.org/wiki/Hedy_Lamarr" target="_blank">Mais informações</a>
-            </div>
-            
+        <section class="resultados-pesquisa" id="resultados">
+          
         </section>
     </main>
     <footer>
         <p>2024 - Women in Tech. Todos os direitos reservados</p>
         <p>Entre em contato pelo email: women@intech.com.br</p>
     </footer>    
-    <script type="module" src="dados.js"></script>
-    <script type="module" src="app.js"></script>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
     <script>
         document.querySelector('.search-button').onmousemove = (e) => {
 
@@ -66,6 +40,7 @@
 
         }
     </script>
+    
 </body>
 
 </html>
